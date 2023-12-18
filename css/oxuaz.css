@@ -1,0 +1,90 @@
+.cards{
+    display: flex;
+}
+.card {
+  margin: 20px;
+  width: 300px;
+  border: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  min-height: 350px;
+}
+
+.card .card-header {
+}
+
+.card .card-header .card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-header .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-header .date-time {
+}
+.card .card-header .date-time .date {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #2293a1;
+  color: white;
+  width: 60px;
+  padding: 7px;
+  text-align: center;
+  font-size: 18px;
+}
+.card .card-header .date-time .time {
+  background-color: #334564;
+  color: white;
+  width: 60px;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  padding: 5px;
+}
+
+.card .card-body {
+}
+.card .card-body .card-text {
+  padding: 15px;
+  text-align: left;
+}
+.card .card-body .card-text p {
+  color: #13317f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+.card .card-body .reactions {
+  display: flex;
+  text-align: center;
+}
+
+.card .card-body .reactions .icon{
+    width: 33.3%;
+    background-color: #f2f2f2;
+    border: 1px solid gray;
+    padding: 6px;
+    color: #999;
+    font-size: 17px;
+}
+
+.card .card-body .reactions .like:hover{
+    background-color: green;
+    color: white;
+    transition:all 500ms;
+}
+.card .card-body .reactions .dislike:hover{
+    background-color: red;
+    color: white;
+    transition: all .5s;
+}
+
+.card:hover{
+    transition: .5s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
